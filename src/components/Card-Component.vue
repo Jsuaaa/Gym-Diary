@@ -1,7 +1,9 @@
 <script setup lang="ts">
+import type { Component } from 'vue'
+
 const props = defineProps<{
   title: string
-  days: number
+  days: string
   date: string
   Icon: Component
 }>()
@@ -13,7 +15,7 @@ const props = defineProps<{
     <!-- Title and Icon -->
     <div class="w-full flex justify-between items-center">
       <h1 class="text-base font-semibold">{{ title }}</h1>
-      <component class="w-5 h-5" :is="props.Icon" />
+      <component class="w-5 h-5 text-gray-700" :is="props.Icon" />
     </div>
 
     <!-- Days -->
