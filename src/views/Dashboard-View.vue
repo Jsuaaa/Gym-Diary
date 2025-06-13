@@ -1,17 +1,18 @@
 <script setup lang="ts">
 import CardComponent from '@/components/Card-Component.vue'
 import HeaderComponent from '@/components/Header-Component.vue'
+import CalendaryComponent from '@/components/Calendary-Component.vue'
 import { Target, TrendingUp, Calendar } from 'lucide-vue-next'
 </script>
 
 <template>
   <!-- Component Container -->
-  <div class="bg-gray-100 lg:px-24">
+  <div class="bg-gray-100 lg:px-24 p-4 md:p-6">
     <!-- Header -->
-    <HeaderComponent />
+    <HeaderComponent class="mb-4" />
 
     <!-- Card Container -->
-    <div class="w-full p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+    <div class="w-full mb-4 grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
       <CardComponent
         class="w-full h-full"
         title="Days Trained"
@@ -33,6 +34,10 @@ import { Target, TrendingUp, Calendar } from 'lucide-vue-next'
         date="Of the Year"
         :Icon="Calendar"
       />
+    </div>
+
+    <div class="w-full">
+      <CalendaryComponent />
     </div>
   </div>
 </template>
