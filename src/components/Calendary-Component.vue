@@ -36,7 +36,7 @@ const calendar = ref<Calendar>(generateCalendar(currentYear))
 // Días de la semana
 const weekDays: string[] = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
-// Etiquetas de los meses
+// Etiquetas de los mesess
 const monthLabels: string[] = [
   'Jan',
   'Feb',
